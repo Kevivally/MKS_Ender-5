@@ -312,6 +312,7 @@ void lcd_printPGM_utf(const char *str, uint8_t n=LCD_WIDTH) {
     #if ENABLED(SHOW_CUSTOM_BOOTSCREEN)
       lcd_custom_bootscreen();
     #endif
+    return;
 
     constexpr uint8_t offy =
       #if ENABLED(START_BMPHIGH)
